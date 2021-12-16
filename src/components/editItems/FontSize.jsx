@@ -26,10 +26,11 @@ const FontSize = (props) => {
         value={size}
         onChange={(e) => {
           setSize(e.target.value);
-          props.changeFontSize(
-            props.formDetails.currentFormFieldIndex,
-            e.target.value
-          );
+          props.formDetails.currentFormFieldIndex !== null &&
+            props.changeFontSize(
+              props.formDetails.currentFormFieldIndex,
+              e.target.value
+            );
         }}
       >
         <MenuItem value={8}>8</MenuItem>

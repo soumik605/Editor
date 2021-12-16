@@ -18,18 +18,9 @@ function MainPage(props) {
   const selectedOption = props.BG[selectedOptionIndex];
 
   const handleSliderChange = ({ target }) => {
-    const value = target.value;
-    props.changeFilter(selectedOptionIndex, value);
+    props.changeFilter(selectedOptionIndex, target.value);
   };
 
-  const getImageStyle = () => {
-    if (props.formDetails.backgroundImage) {
-      const filters = props.BG.map((option) => {
-        return `${option.property}(${option.value}${option.unit})`;
-      });
-      return { filter: filters.join(" ") };
-    }
-  };
 
   return (
     <>
@@ -42,7 +33,7 @@ function MainPage(props) {
           <TextEditor />
         </div>
 
-        <div className="main-image" style={getImageStyle()}>
+        <div className="main-image">
           <ImagePage />
           <FormPage />
         </div>

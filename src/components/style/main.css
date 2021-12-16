@@ -49,7 +49,7 @@
 
 .crop-btn {
   display: flex;
-  height: fit-content;
+  height: min-content;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -57,8 +57,14 @@
   background-color: white;
   border: none;
   border-radius: 10px;
+  color: rgb(58, 58, 58);
+}
+
+.crop-btn > h4{
+  margin:  10px 5px 0;
 }
 
 .crop-btn:hover {
   background-color: lightgray;
+  color: black;
 }

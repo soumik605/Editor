@@ -2,75 +2,75 @@ import { CHANGE_FILTER } from "../Constaints";
 
 const initialState = [
   {
-    name: 'Brightness',
-    property: 'brightness',
+    name: "Brightness",
+    property: "brightness",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Contrast',
-    property: 'contrast',
+    name: "Contrast",
+    property: "contrast",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Saturation',
-    property: 'saturate',
+    name: "Saturation",
+    property: "saturate",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Grayscale',
-    property: 'grayscale',
+    name: "Grayscale",
+    property: "grayscale",
     value: 0,
     range: {
       min: 0,
-      max: 100
+      max: 100,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Sepia',
-    property: 'sepia',
+    name: "Sepia",
+    property: "sepia",
     value: 0,
     range: {
       min: 0,
-      max: 100
+      max: 100,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Hue Rotate',
-    property: 'hue-rotate',
+    name: "Hue Rotate",
+    property: "hue-rotate",
     value: 0,
     range: {
       min: 0,
-      max: 360
+      max: 360,
     },
-    unit: 'deg'
+    unit: "deg",
   },
   {
-    name: 'Blur',
-    property: 'blur',
+    name: "Blur",
+    property: "blur",
     value: 0,
     range: {
       min: 0,
-      max: 20
+      max: 20,
     },
-    unit: 'px'
-  }
+    unit: "px",
+  },
 ];
 
 export default function BGReducer(state = initialState, action) {

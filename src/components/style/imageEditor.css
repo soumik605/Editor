@@ -1,6 +1,6 @@
 .sidebar-item {
   display: flex;
-  height: fit-content;
+  height: min-content;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -9,6 +9,10 @@
   border: none;
   border-radius: 10px;
   color: rgb(58, 58, 58);
+}
+
+.sidebar-item > h4{
+  margin:  10px 5px 0;
 }
 
 .sidebar-item:hover {

@@ -21,9 +21,27 @@ const CanvasImagePage = (props) => {
   let currentDragType = null;
 
   useEffect(() => {
-    if (props.formDetails.images.length !== 0) {
+
+
+    /*Wrong Methods
+      if (props.formDetails.images.length !== 0) {
       props.formDetails.images.map((img) => allImages.push(img));
     }
+    props.formData.formData.map((data) => boxes.push(data)); */
+
+    /* working!!!  
+    
+    allImages = [
+        {
+          x: props.formDetails.images[0].x,
+          y: props.formDetails.images[0].y,
+        },
+        {
+          x: props.formDetails.images[1].x,
+          y: props.formDetails.images[1].y,
+        },
+      ];
+    
 
     boxes = [
       {
@@ -38,7 +56,16 @@ const CanvasImagePage = (props) => {
         x: props.formDetails.formData[2].x,
         y: props.formDetails.formData[2].y,
       },
-    ];
+    ]; */
+
+    /*  allImages = props.formDetails.images.slice(0);
+    boxes = props.formDetails.formData.slice(0); */
+
+    /* allImages = [...props.formDetails.images];
+    boxes = [...props.formDetails.formData]; */
+
+    boxes = JSON.parse(JSON.stringify(props.formDetails.formData));
+    allImages = JSON.parse(JSON.stringify(props.formDetails.images));
 
     const canvasEle = canvas.current;
     canvasEle.width = canvasEle.clientWidth;

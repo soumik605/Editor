@@ -12,7 +12,7 @@ export const REMOVE_CURRENT_TEXT = "REMOVE_CURRENT_TEXT";
 export const EMPTY_CURRENT_TEXT = "EMPTY_CURRENT_TEXT";
 
 
-//
+///////////////////////////////////////////
 
 export const ADD_IMAGE = "ADD_IMAGE";
 export const ADD_BG_IMAGE = "ADD_BG_IMAGE";

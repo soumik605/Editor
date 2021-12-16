@@ -26,10 +26,11 @@ const FontFamily = (props) => {
         value={family}
         onChange={(e) => {
           setFamily(e.target.value);
-          props.changeFontFamily(
-            props.formDetails.currentFormFieldIndex,
-            e.target.value
-          );
+          props.formDetails.currentFormFieldIndex !== null &&
+            props.changeFontFamily(
+              props.formDetails.currentFormFieldIndex,
+              e.target.value
+            );
         }}
       >
         <MenuItem value="">
