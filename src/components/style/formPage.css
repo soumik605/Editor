@@ -1,0 +1,18 @@
+.FormPage {
+  width: calc(100% - 1100px);
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.FormPage > div{
+    margin: 10px 5px;
+    min-width: 250px;
+}
+
+
+.active-field{
+  border: red;
+  background-color: yellow;
+}

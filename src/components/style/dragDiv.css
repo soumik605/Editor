@@ -1,0 +1,28 @@
+.rnd {
+    overflow: hidden;
+    width: min-content;
+    height: min-content;
+  }
+  
+  .rnd:hover {
+    outline: 1px solid tomato;
+  }
+  
+  
+  .rnd .CloseBtn{
+      background-color: transparent;
+      border: none;
+      visibility: hidden;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      width: min-content;
+      margin-left: auto;
+      padding: 5px;
+  
+    }
+    
+    .rnd:hover .CloseBtn {
+      visibility: visible;
+     
+    }

@@ -1,0 +1,20 @@
+.color-container{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: 1px solid grey;
+    height: 38px;
+    border-radius: 5px;
+    
+}
+
+.color-container > div{
+   width: 60px;
+   height: 38px;
+}
+
+.colorModel{
+    position: absolute;
+    margin-top: 50px;
+    z-index: 99;
+}
